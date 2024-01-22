@@ -39,12 +39,13 @@
 
 import java.util.Scanner;
 
-public class DiaSemanaC4 {
+class DiaSemanaC4 {
     public static void main(String[] args) {
 
                 Scanner scanner = new Scanner(System.in);
                 System.out.println("Por favor, ingrese un número del 1 al 7:");
                 int dia = scanner.nextInt();
+//IntelliJ me sugirio cambiar el switch comun por este mas moderno: se llama 'switch' expression:
                 String diaSemana = switch (dia) {
                     case 1-> "Lunes";
                     case 2-> "Martes";
