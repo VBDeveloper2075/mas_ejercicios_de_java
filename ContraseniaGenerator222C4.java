@@ -26,15 +26,16 @@ public class ContraseniaGenerator222C4 {
     // SEGUNDO creo el metodo que genera la contrasenia:
     public static String generarContrasenia (int longitud){
         String caracteresPosibles = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-        String contrasenia = "";
+        StringBuilder contrasenia = new StringBuilder();
         for (int i = 0; i < longitud; i++) {
             int indiceAleatorio = (int) (Math.random() * caracteresPosibles.length());
             char caracterAleatorio = caracteresPosibles.charAt(indiceAleatorio);
-            contrasenia += caracterAleatorio;
+            contrasenia.append(caracterAleatorio);
         }
 
         JOptionPane.showMessageDialog(null, "Nueva contrasenia: " + contrasenia);
-        return contrasenia;
+
+        return caracteresPosibles;
     }
 }
 
