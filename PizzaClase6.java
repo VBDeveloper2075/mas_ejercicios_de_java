@@ -1,5 +1,2 @@
-
-
 public class PizzaClase6 {
-
 }

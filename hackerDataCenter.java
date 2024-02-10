@@ -22,7 +22,6 @@ import org.jetbrains.annotations.NotNull;
 public class hackerDataCenter {
 
     public int[] solve(@NotNull String direction, int x, int y, int width, int height) {
-
         int[] result = new int[2];
         switch (direction) {
             case "U":
